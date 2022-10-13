@@ -43,16 +43,16 @@ const useUserStore = defineStore({
     getUserInfo() {
       return new Promise((resolve, reject) => {
         getUserInfo()
-          .then(({ data }) => {
-            if (!data) {
+          .then((res: any) => {
+            const { nickname, avatar } = res.data;
+            if (!nickname) {
               return reject("认证失败，请重新登录");
             }
-            const { nickname, avatar } = data;
             this.nickname = nickname;
             this.avatar = avatar;
-            resolve(data);
+            resolve(res.data);
           })
-          .catch((error) => {
+          .catch((error: any) => {
             reject(error);
           });
       });
