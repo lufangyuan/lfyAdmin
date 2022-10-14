@@ -297,10 +297,11 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.module.scss";
 .tags-view__container {
-  height: 34px;
+  height: $tagsViewHeight;
   width: 100%;
-  background: #fff;
+  background: $tagsViewBg;
   border-bottom: 1px solid #d8dce5;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
   user-select: none;
