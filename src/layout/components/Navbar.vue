@@ -72,16 +72,17 @@ function logout() {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.module.scss";
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .navbar {
-  height: 50px;
+  height: $navHeight;
   overflow: hidden;
   position: relative;
-  background: #fff;
+  background: $navbarBg;
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   user-select: none;
   .hamburger-container {
