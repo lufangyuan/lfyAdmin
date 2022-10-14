@@ -1,6 +1,8 @@
 <template>
   <div class="app-container">
-    <el-button @click="test" :loading="loading">测试网络请求</el-button>
+    <div class="container">
+      <el-button @click="test" :loading="loading">测试网络请求</el-button>
+    </div>
   </div>
 </template>
 

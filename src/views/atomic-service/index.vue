@@ -1,7 +1,9 @@
 <template>
-  <div class="app-container">
-    测试页面缓存:{{ c }}
-    <el-button type="primary" @click="c++">+</el-button>
+<div class="app-container">
+    <div class="container">
+      测试页面缓存:{{ c }}
+      <el-button type="primary" @click="c++">+</el-button>
+    </div>
   </div>
 </template>
 
