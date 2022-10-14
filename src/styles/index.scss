@@ -61,7 +61,18 @@ div:focus {
     height: 0;
   }
 }
+
 //全局的主体部分样式
 .app-container {
+  width: 100%;
+  // min-width: 800px;//固定最低宽度
+  min-height: calc(100vh - $navHeight - $tagsViewHeight);
   padding: 15px;
+  background-color: #f5f7fa;
+  
+  .container {
+    min-height: calc(100vh - 30px - $navHeight - $tagsViewHeight);
+    background-color: #fff;
+    border-radius: 4px;
+  }
 }
