@@ -1,6 +1,5 @@
 ### 项目介绍
 基于vue3 + TypeScript + vite + element-plus构建的管理后台的基础框架，有基本的登录，菜单栏，导航栏，tagView等，可以在此基础上进行开发
-![](https://www.linlangxiazi.com/lfy/src/upload/image/202210131227101900.png)
 #### 安装
 `npm install`
 ####运行
